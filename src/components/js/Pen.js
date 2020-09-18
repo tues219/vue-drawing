@@ -14,15 +14,14 @@ class Pen {
 
     this.tool.onMouseDrag = function (event) {
       path.add(event.point)
-      path.smooth()
+      path.smooth({ type: 'continuous' })
       path.strokeCap = 'round';
     }
 
     this.tool.onMouseUp = function () {
       self.context.history.add(path)
-      console.log(self)
     }
   }
-}
+}              
 
 export default Pen
