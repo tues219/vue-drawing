@@ -130,7 +130,7 @@ export default {
         "image-export",
         this.drawing.project.exportSVG({ asString: true })
       );
-      console.log(this.drawing.project.exportSVG({ asString: true }));
+      // console.log(this.drawing.project.exportSVG({ asString: true }));
     },
   },
   mounted() {
@@ -142,8 +142,8 @@ export default {
 <style scoped lang="scss">
 .wrapper {
   // width: 500px;
-  position: relative;
-  margin: 0 auto;
+  // position: relative;
+  // margin: 0 auto;
 }
 
 .options {
