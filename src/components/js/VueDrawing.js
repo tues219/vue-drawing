@@ -9,7 +9,7 @@ class VueDrawing {
     this.pen = new Pen()
     this.activeTool = this.pen
     this.style = {
-      strokeWidth: 1,
+      strokeWidth: 2,
       strokeColor: '#000'
     }
     this.use(this.pen)

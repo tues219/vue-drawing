@@ -1,5 +1,5 @@
 <template>
-  <Main :width="500" :height="600"></Main>
+  <Main></Main>
 </template>
 
 <script>

@@ -24,7 +24,7 @@
     name: 'thickness',
     data () {
       return {
-        thickness: 1,
+        thickness: 2,
         list: [
           1, 2, 5, 10, 15
         ],

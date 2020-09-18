@@ -8,9 +8,9 @@ module.exports = {
     'eslint:recommended'
   ],
   rules: {
-    'vue/script-indent': ['error', 2, {
-      'baseIndent': 1
-    }],
+    // 'vue/script-indent': ['error', 2, {
+    //   'baseIndent': 1
+    // }],
     'no-extra-semi': 'error'
   },
   'overrides': [

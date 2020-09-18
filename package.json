@@ -15,8 +15,9 @@
     "url": "https://github.com/BigSaltyFish/vue-drawing"
   },
   "dependencies": {
-    "vue": "^2.5.11",
-    "paper": "^0.12.3"
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "paper": "^0.12.3",
+    "vue": "^2.5.11"
   },
   "browserslist": [
     "> 1%",
