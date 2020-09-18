@@ -81,13 +81,13 @@ export default {
   computed: {
     width() {
       if (window.innerWidth < window.innerHeight) {
-        return window.innerWidth;
+        return window.innerWidth * 0.9;
       } else {
-        return window.innerHeight;
+        return window.innerHeight * 0.9;
       }
     },
     height() {
-      return (this.width * 3) / 2;
+      return this.width;
     },
   },
   methods: {
@@ -116,7 +116,7 @@ export default {
     },
     undo() {
       let length = this.drawing.history.container.length;
-      console.log("length",length)
+      console.log("length", length);
       if (length > 0) {
         this.drawing.history.container[length - 1].removeSegments();
         this.drawing.history.container.pop();
