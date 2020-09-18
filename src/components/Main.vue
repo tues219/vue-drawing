@@ -81,9 +81,9 @@ export default {
   computed: {
     width() {
       if (window.innerWidth < window.innerHeight) {
-        return window.innerWidth * 0.9;
+        return window.innerWidth * 0.8;
       } else {
-        return window.innerHeight * 0.9;
+        return window.innerHeight * 0.8;
       }
     },
     height() {
@@ -98,9 +98,11 @@ export default {
       this[name]();
     },
     stroke() {
+      this.drawing.style.strokeWidth = 2;
       this.drawing.restoreTool();
     },
     eraser() {
+      this.drawing.style.strokeWidth = 15;
       let eraser = new Eraser();
       this.drawing.use(eraser);
     },

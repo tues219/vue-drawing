@@ -1,7 +1,7 @@
 import paper from 'paper'
 
 class Eraser {
-  constructor () {
+  constructor() {
     this.tool = new paper.Tool()
     let path
     let self = this
@@ -17,6 +17,8 @@ class Eraser {
 
     this.tool.onMouseDrag = function (event) {
       path.add(event.point)
+      path.strokeCap = 'round';
+
     }
 
     this.tool.onMouseUp = function () {
